@@ -28,27 +28,25 @@ h2, h4, p{
 }
 
 #bottom-section{
+  display:flex;
+  flex-direction:column;
   width:100%;
   height:55%;
   color:#e5eff5;
 }
 
 #bottom-left-section{
-  vertical-align:top;
-  display:inline-block;
-  width:100%;
   height:100%;
   background-color:#2ab2af;
   padding:20px;
+  flex-basis:50%;
 }
 
 #bottom-right-section{
-  vertical-align:top;
-  display:inline-block;
-  width:100%;
   height:100%;
   background-color:#44dbd8;
   padding:20px;
+  flex-basis:50%;
 }
 
 #top-section h2{
@@ -89,6 +87,7 @@ button:hover{
 #bottom-left-section p{
   font-size:0.8rem;
   margin-bottom:40px;
+
 }
 
 #price-month, #price{
@@ -119,8 +118,7 @@ ul{
   width:550px;
   height:400px;
   }
-  
-  #bottom-left-section, #bottom-right-section{
-    width:50%;
+  #bottom-section{
+    flex-direction:row;
   }
 }
